@@ -62,6 +62,8 @@ PRIVATE_C_INCLUDES := external/openssl/openbsd-compat
 
 LOCAL_SHARED_LIBRARIES += libssh libssl libcrypto libdl libz
 
+LOCAL_CFLAGS += -fno-strict-aliasing
+
 include $(BUILD_EXECUTABLE)
 
 ###################### sftp ######################
